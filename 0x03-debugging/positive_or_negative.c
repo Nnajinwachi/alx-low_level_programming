@@ -8,9 +8,8 @@
  *Return: Always 0 (Success)
  */
 
-int main(void)
+void positive_or_negative(int n)
 {
-	int n;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
@@ -27,6 +26,4 @@ int main(void)
 	{
 		printf("%d is positive\n", n);
 	}
-
-	return (0);
 }
