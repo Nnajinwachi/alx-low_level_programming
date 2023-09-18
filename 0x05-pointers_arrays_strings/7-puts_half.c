@@ -1,15 +1,29 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * puts_half - prints every other character of a strin
+ * @str: A pointer to an int that will be changed
+ *Return: void which means our answer is correct
  */
-int main(void)
-{
-	char *str;
 
-	str = "0123456789";
-	puts2(str);
-	return (0);
+void puts_half(char *str)
+
+{
+	int i, last;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+
+	last = (i + 1) / 2;
+
+	for (i = last; str[i]; i++)
+	{
+		_putchar (str[i]);
+	}
+
+	_putchar ('\n');
+
 }
